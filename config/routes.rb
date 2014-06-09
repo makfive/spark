@@ -1,11 +1,12 @@
 Spark::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/about"
-  get "static_pages/career"
-  get "static_pages/terms"
-  get "static_pages/policy"
-  get "static_pages/help"
-  get "static_pages/employer"
+  root  'static_pages#home'
+  match '/about',    to: 'static_pages#about',    via: 'get'
+  match '/career',    to: 'static_pages#career',    via: 'get'
+  match '/terms',    to: 'static_pages#terms',    via: 'get'
+  match '/policy',    to: 'static_pages#policy',    via: 'get'
+  match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/employer',    to: 'static_pages#employer',    via: 'get'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

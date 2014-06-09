@@ -1,14 +1,69 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-  <title>Spark</title>
+<meta charset="utf-8" />
+<title>
+
+
+Spark｜就活・採用がよりシンプルに
+
+
+</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+	 <div class="header-background"><!--background image-->
+            <div class="header-title">
+                <div class="wrap">
+                
+                
+                    <div class="logo">
+                        <%= link_to image_tag('spark_title.png', alt:"Spark"),  root_path %>
+                        
+                    </div><!--logo-->
+                        <div class='upper-right-buttons'>
+                            
+                            <%= link_to "企業の皆様",  employer_path, { :class => "employers btn", :id => "employers_button" } %>
+                            
+                            <div class="login signin_modal"> 
+                                <%= link_to image_tag('login.png', alt:"Login"), '/home', { :id => "signin_button" }%>
+                            </div>
+                        </div>
+                        
+                </div><!--header title-->
+            </div><!--wrap-->
+
 <%= yield %>
+
+
+    <footer>
+        <div class="wrap">
+            <div class="sm-sprites">
+                <%= link_to "", '#', id: "facebook" %>
+                <%= link_to "", '#', id: "twitter" %>
+                <%= link_to "", '#', id: "linkedin" %>
+            </div>
+        
+        
+        <div class="footer-nav">
+            <ul>
+                <li><%= link_to "会社概要",  about_path %></li>
+                <li><%= link_to "採用情報",  career_path %></li>
+                <li><%= link_to "利用規約",  terms_path %></li>
+                <li><%= link_to "プライバシーポリシー",  policy_path %></li>
+                <li><%= link_to "お問い合わせ",  help_path %></li>
+            </ul>
+        </div>
+        
+        <p class="copyright">&copy; 2014 Spark Inc. All Rights Reserved.</p>
+    </div>
+    </footer>
+
 
 </body>
 </html>

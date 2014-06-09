@@ -1,2 +1,164 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="header-content">
+                <div class="wrap">
+                    <div class="header-left">
+                        <div class='carousel-inner'>
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <%= image_tag("cover1.png") %>
+                                </div>
+                                
+                                <div class="item">
+                                  <%= image_tag("cover2.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover3.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover4.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover5.png") %>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="main-info black-box">
+                            <h1>バイト・仕事探しを<p>もっとシンプルに</p></h1>
+                        </div>
+                        <div class="main-tagline">
+                            <h2>仕事の応募に履歴書はもういらない<p>スマホでスワイプしてイイネを押すだけ</p></h2>
+                        </div>
+                        <div id='app_button_mobile'>
+                            <%= link_to image_tag("apple_store_icon.png", alt:"Available on the App Store"),"#", { :id => "app_store_mobile" }  %>
+                        </div>
+                        
+                        <div class="btns">
+                            <div class="btn-main">
+                                <%= link_to "今すぐ登録（無料）", "#", { :class => "find-btn signup_modal", :id => "signup_now"}  %>
+                            </div>
+                            <div class="btn-main">
+                                <%= link_to "アプリダウンロード", "#", { :class => "find-btn app_modal", :id => "get_the_app'"}  %>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        <div id='learn_more_button'>
+            <%= link_to "詳しく見る", "#information", { :class => "scroll", :id => "learn_more"}  %>
+        </div>
+        </div><!--header wrap-->
+ 
+    
+    <section id="information">
+        
+        <div class="phrase">
+            新しいリクルーティング体験を
+        </div>
+        
+        
+        
+        <div class="wrap">
+            <div class="info-title">
+                <hr class="info-left">
+                Sparkの使い方
+                <hr class="info-right">
+            </div>
+            <div class="information first"><!--magnify and Rate-->
+                <div class="left-info">
+                    <%= image_tag("phone.png", alt:"phone") %>
+                    <h3>履歴書不要</h3>
+                    <p class="info-content">
+                    経歴の入力はすぐ終わる
+                    </p>
+                </div>
+                
+                <div class="right-info">
+                    <%= image_tag("like.png", alt:"like") %>
+                    <h3>応募は簡単</h3>
+                    <p class="info-content">
+                    応募に必要なのは指１つだけ
+                    </p>
+                </div>
+            </div><!--info first-->
+        </div><!--wrap-->
+        
+        <div class="wrap">
+            <div class="information second"><!--match-->
+                <div class="info-center">
+                    <%= image_tag("match.png", alt:"match") %>
+                    <h3>マッチング</h3>
+                    <p class="info-content">
+                    あなたがイイネした企業がイイネを返してきたらマッチング成立です。あとは面接に進むだけ。
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+        <div class="wrap">
+            <div class="information third"><!--Message and Share-->
+                <div class="left-info">
+                    <%= image_tag("chat.png", alt:"message") %>
+                    <h3>直接チャット</h3>
+                    <p class="info-content">
+                    アプリで企業と直接やりとりできます
+                    </p>
+                </div>
+                
+                <div class="right-info">
+                    <%= image_tag("share.png", alt:"share") %>
+                    <h3>シェア</h3>
+                    <p class="info-content">
+                    友達に合いそうな求人があったらシェアしてポイントゲット
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="employers">
+        <div class="wrap">
+            <h3 class="employee-tagline">登録企業の一例</h3>
+            <p class="employee-subhead">どんどん多くの企業に登録頂いています</p>
+            <hr class="underline"></span>
+                <div class="employer-logos">
+                    <ul>
+                        <li><%= link_to image_tag("microsoft.png"),"#", { :id => "partner1" }  %></li>
+                        <li><%= link_to image_tag("linkedin.png"),"#", { :id => "partner2" }  %></li>
+                        <li><%= link_to image_tag("amazon.png"),"#", { :id => "partner3" }  %></li>
+                        <li><%= link_to image_tag("spotify.png"),"#", { :id => "partner4" }  %></li>
+                        <li><%= link_to image_tag("facebook.png"),"#", { :id => "partner5" }  %></li>
+                    </ul>
+                </div>
+            <h4 class='employer-link'>Sparkに興味がある企業様は<%= link_to "こちらで無料登録", "/employer/"  %></h4>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <div class="wrap">
+            <div class="info-title">
+                <hr class="info-left">
+                メディア掲載実績
+                <hr class="info-right">
+            </div>
+            <div class="sponsors">
+                <ul>
+                    <li><%= link_to image_tag("nikkei.jpg"),"#", { :id => "press1" }  %></li>
+                    <li><%= link_to image_tag("cnet.jpeg"),"#", { :id => "press2" }  %></li>
+                    <li><%= link_to image_tag("techcrunch.jpeg"),"#", { :id => "press3" }  %></li>
+                </ul>
+            </div>
+        </div>
+    </section>

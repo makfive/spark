@@ -1,2 +1,58 @@
-<h1>StaticPages#employer</h1>
-<p>Find me in app/views/static_pages/employer.html.erb</p>
+ <div class="header-content">
+                <div class="wrap">
+                    <div class="header-left">
+                        <!--<img src="//s3.amazonaws.com/emjoyment-prod/static/landing_page_v2/images/phone.png">-->
+                        <div class='carousel-inner'>
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                              </ol>
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <%= image_tag("cover1.png") %>
+                                </div>
+                                
+                                <div class="item">
+                                  <%= image_tag("cover2.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover3.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover4.png") %>
+                                </div>
+                                <div class="item">
+                                  <%= image_tag("cover5.png") %>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="main-info black-box">
+                            <h1>採用活動を<p>よりシンプルに</p></h1>
+                        </div>
+                        <div class="main-tagline">
+                            <h2>リクルーティングが未だかつてないほど効率的に</h2>
+                        </div>
+                        
+                        <div class="btns">
+                            <div class="btn-main">
+                                <%= link_to "今すぐ登録（無料）", "#", { :class => "find-btn signup_modal", :id => "signup_now"}  %>
+                            </div>
+                        <div id='app_store_buttons'>
+                            <!--<a href="https://itunes.apple.com/us/app/emjoyment/id870417683" class=""target='_blank'><img src="//s3.amazonaws.com/emjoyment-prod/static/landing_page_v2/images/apple_store_icon.png" alt="Available on the App Store" id='app_store'></a>-->
+                            <!--<a href="#" class=""><img src="//s3.amazonaws.com/emjoyment-prod/static/landing_page_v2/images/play_store_icon.png" alt="Available on the App Store" id='play_store'></a>-->
+                        </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div><!--header wrap-->
