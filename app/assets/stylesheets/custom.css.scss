@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-size: 75%;
   font-family: "MS P Gothic";
-;
+
 }
 ol, ul {
   list-style: none;
@@ -53,7 +53,7 @@ h1, h2, h3, p{
     line-height: 1em;
 }
 .header-background {
-  background: url(spark_background.jpg) no-repeat center center fixed; 
+  background:  url('spark_background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,7 +114,7 @@ h1, h2, h3, p{
 }
 
 .header-left{
-    background: url('iphone.png') no-repeat;
+    background: url(('iphone.png')) no-repeat;
     opacity:0.9;
     width:250px;
     float: left;
