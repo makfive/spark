@@ -1,0 +1,1082 @@
+@import "bootstrap";
+
+/* Spark Style */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font-size: 75%;
+  font-family: "MS P Gothic";
+
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, p{
+    font-family: "MS P Gothic";
+    line-height: 1em;
+}
+.header-background {
+  background:  url('spark_background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: relative;
+  opacity: 1;
+  display: block;
+}
+
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    
+}
+.header-title{
+    width:100%;
+    background-color: white;
+    height: 70px;
+    color: white;
+    font-size: 2em;
+    z-index: 1000;
+    padding-top: 20px;
+    margin-bottom:70px;
+}
+
+
+.logo {
+    float: left;
+    position:relative;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.logo:hover{
+    opacity: 1;
+}
+
+.login {
+    display:inline-block;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.login li{
+    display: inline-block;
+    color:black;
+}
+
+.login img {
+    width: 100px;
+}
+.login a{
+    text-decoration: none;
+}
+
+.header-left{
+    background: url(<%= asset_path('iphone.png') %>) no-repeat;
+    opacity:0.9;
+    width:250px;
+    float: left;
+    height: 500px;
+    padding-left:12px;
+    padding-right:12px;
+    padding-bottom:50px;
+    padding-top:62px;
+    position:relative;
+}
+
+.carousel-inner {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    width:230px;
+    height:408px;
+}
+
+.main-info {
+    color: white;
+    font-size: 4em;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: right;
+    border-bottom: solid white;
+    font-weight: 600;
+    
+}
+.main-tagline {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+.header-right {
+    float: right;
+    width: 500px;
+    height: 200px;
+    padding-left: 10px;
+}
+.btns {
+    margin-top: 50px;
+    width:400px;
+    float: right;
+}
+.btn-main{
+    margin: 0 auto;
+    display: block
+}
+.btn-main a:focus,.btn-main a:active{
+    text-decoration: none;
+    color:#fff;
+}
+.find-btn {
+    background-color: rgba(41, 128, 185,0.7);
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    padding:30px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 13px rgba(0,0,0,.5);
+    display: block;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.find-btn:hover{
+    background-color: rgba(52, 152, 219,1.0);
+    color: #fff;
+    text-decoration: none;
+}
+/* Employer & Learn Button*/
+.btn{
+    
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color: rgba(41, 128, 185,0.8);
+    padding:15px 40px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.5s ease;  
+        border-radius: 10px;
+
+}
+
+.btn-modal{
+    width: 100%;
+    background-color: rgba(240, 90, 40, 1);
+    padding: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.btn:focus{
+    color:#fff;
+}
+
+.employers.btn, .candidates.btn{
+    display:inline-block;
+    font-size:18px;
+    padding:5px;
+    padding-right:15px;
+    padding-left:15px;
+    vertical-align: middle;
+    margin-bottom:22px;
+    margin-right:15px;
+}
+
+.learn.btn {
+    float: right;
+
+}
+
+.btn:hover{
+    background-color: rgba(52, 152, 219,1.0);
+    color:#fff;
+}
+
+/* Section Information */
+#information {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: #2980b9;
+
+}
+
+.phrase {
+     font-family: "MS P Gothic";
+     color: #2980b9;
+     font-size: 4.5em;
+     padding: 20px 0;
+     font-weight: 300;
+     background-color: rgb(215, 215, 215);
+}
+
+.email {
+    height:150px;
+    display: inline-block;
+}
+
+.email-btn{
+    width: 70%;
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    color: #2980b9;
+    font-size: 2em;
+    padding:15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    float:left;
+    
+}
+.email-btn:hover{
+    color: white;
+    background-color:#2980b9;
+}
+.subscribe-btn{
+    width: 20%;
+    border: 1px solid #2980b9;
+    border-radius: 10px;
+    color: #2980b9;
+    font-size: 2em;
+    padding:15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    float: right;
+    
+}
+
+.subscribe-btn:hover{
+    color: white;
+    background-color:#2980b9;
+}
+
+hr.info-left{
+    height: 2px;
+    color: #2980b9;
+    background-color: #2980b9;
+    width: 200px;
+    border: 0;
+    margin-top: 25px;
+    float:left;
+}
+hr.info-right{
+    height: 2px;
+    color: #2980b9;
+    background-color: #2980b9;
+    width: 200px;
+    border: 0;
+    margin-top: 25px;
+    float:right;
+    
+}
+.info-title {
+    font-family: "MS P Gothic";
+     color: #2980b9;  
+     font-size: 3em;
+     padding: 20px 0;
+     font-weight: 100;
+     display: inline-block;
+     width: 700px;
+     margin: 50px 0;
+}
+.information{
+    width: 100%;
+    /*background-color: rgb(215, 215, 215);*/
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.information img{
+    margin: 20px 0 20px 0;
+    width: 150px;
+    height: 150px;
+}
+
+.information.first h3{
+    font-size: 3em;
+}
+
+.left-info{
+    float: left;
+    width: 425px;
+    height: 300px;
+    padding:20px;
+    background-color: rgb(215, 215, 215);
+    
+}
+
+.right-info{
+    float: right;
+    width: 425px;
+    height: 300px;
+    padding:20px;
+    background-color: rgb(215, 215, 215);
+    
+}
+
+/* p for each information section*/
+.info-content {
+    font-size: 1.6em;
+    padding-top: 30px;
+}
+
+.info-center{
+    width: 480px;
+    margin: 0 auto;
+}
+.information.second {
+    width: 100%;
+    height: 350px;
+    background-color: #2980b9; 
+    margin: 25px 0;   
+}
+
+.information.second p{
+    color: white;
+}
+
+.information.second h3{
+    color: white;
+    font-size: 3em;
+}
+
+.info-2 .info-content{
+    color: white;
+}
+
+
+.information.third h3{
+    font-size: 3em;
+    
+}
+
+#employers {
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(215, 215, 215);
+}
+
+.employee-tagline {
+   font-family: "MS P Gothic";
+    font-size: 4.5em;
+    color: #2980b9;
+    text-align: center;
+    
+    font-weight: 200;
+    padding-top: 40px;
+}
+
+.employee-subhead {
+    font-family: "MS P Gothic";
+    font-size: 2em;
+    color: #2980b9;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-style: italic;
+}
+
+hr.underline {
+    height: 1px;
+    color: #2980b9;
+    background-color: #2980b9;
+    width: 300px;
+    border: 0;
+    margin-top: 20px;
+    
+}
+
+.employer-logos {
+    margin-top: 80px;
+}
+
+.employer-logos ul li{
+    display: inline-block;
+    margin-left: 45px;
+}
+
+.employer-logos ul li:first-child {
+    margin-left: 0;
+}
+
+
+#sponsors {
+    text-align: center;
+}
+.sponsors {
+    text-align: center;
+}
+.sponsors ul li{
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 40px 50px;
+    margin-left: -4px;
+    
+}
+
+.sponsors ul li:first-child{
+    margin-left: 0;
+}
+footer{
+    padding-top: 100px;
+    width: 100%
+    
+}
+
+.sm-sprites {
+    width: 180px;
+    height: 100px;
+    position: relative;
+    margin:0 auto;
+    display: block;
+}
+
+#facebook {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(facebook_icon.png);
+    background-position: 0 0;
+}
+
+#facebook:hover {
+    
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(facebook_icon2.png);
+}
+
+#twitter {
+    margin-left:10px;
+    margin-right:10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(twitter_icon.png);
+    
+}
+
+#twitter:hover {
+    margin-left:10px;
+    margin-right:10px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(twitter_icon2.png);
+}
+
+#linkedin {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(linkedin_icon.png);
+    
+}
+
+#linkedin:hover {
+    
+    width: 50px;
+    height: 50px;
+    float: left;
+    background-image: url(linkedin_icon2.png);
+}
+
+.footer-nav {
+    margin: 25px 0;
+}
+
+.footer-nav ul{
+    text-align: center;
+}
+
+.footer-nav ul li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 15px; 
+    font-size: 1.8em;
+}
+
+.footer-nav ul li:first-child{
+    margin-left: 0;
+}
+
+
+
+.footer-nav ul li a{
+    text-decoration: none;
+    color: #2980b9;
+}
+ 
+.footer-nav ul li a:hover{
+    color: #c0392b;
+}   
+
+.copyright {
+    text-align: center;
+    font-size: 1em;
+}
+
+
+/*@media screen and (max-width:960px)
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+*/
+
+@media only screen and (max-device-width:480px){
+    
+    .wrap{
+        width: 90%;
+    }
+    
+    .header-background{
+        background: url(img/mobile_background.jpg) no-repeat center center fixed; 
+        background-attachment: scroll;
+        height: 400px;
+        padding-top: 100px;
+
+        
+
+    }
+    .logo{
+        margin: 0 auto 10px;
+        float: left;
+        opacity: 1;
+    }
+    
+    .logo img{
+        width: 150px;
+    }
+    
+   
+    h1, h2, h3{
+        font-size: 1em;
+    }
+    
+    .header.wrap{
+        top: 0;
+        height: 75px;
+        background-color: black;
+        width: 100%
+    }
+    
+    .header-title{
+        margin-top: -100px;
+        text-align: center;
+        background-color: white;
+        height: 50px;
+    }
+    
+    .login{
+        padding: 5px 0;
+        
+    }
+    
+    .login img{
+        width:75px;
+    }
+    .header-left{
+        clear: both;
+        display: block;
+        width: 100%;
+        padding: 20px 0 20px 0;
+        text-align: center;
+        display: none;
+    }
+    
+    .main-info{
+        text-transform: uppercase;
+        font-size:2.5em;
+    }
+    
+    .header-right{
+        clear: both;
+        display: block;
+        width: 100%;
+        padding:10px 0;
+    }
+    .main-tagline {
+        color: white;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+   
+    .btn-main{
+        width: 100%;
+        clear: both;
+        
+    }
+    
+    .find-btn{
+        font-size: 2em;
+        width: 80%;
+        padding: 10px 5px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
+    .btn-lower {
+        text-align: center;
+        margin: 0 auto;
+        width: 85%;
+    }
+    .btns {
+        display: none;
+        clear: both;
+        font-size: 1em;
+        padding:10px 5px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .btn{
+        padding: 10px 10px;
+        font-size: 1em;
+        
+    }    
+    .employers.btn{
+
+        display:none;
+    }
+    .candidates.btn{
+
+        display:none;
+    }
+    .learn.btn{
+
+        width: 40%;
+    }
+    
+    .phrase {
+        font-size: 2em;
+        margin-top:0px;
+    }
+    
+    
+    .email-btn{
+        font-size: 2em;
+        text-align: center;
+        width: 50%;
+        float: none;
+    }
+    .subscribe-btn{
+        font-size: 1em;
+        float: none;
+        text-align: center;
+        width: 25%;
+        margin-top: 10px;
+        padding: 10px 20px; 
+    }
+    
+    .info-title{
+        width: 90%;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    hr.info-left{
+        width: 20%;
+        height: 1px;
+        margin-top: 10px;
+    }
+    
+    hr.info-right{
+        width: 20%;
+        height: 1px;
+        margin-top: 10px;
+    }
+    
+    
+    .information{
+        height: 100%;
+    }
+    .information.first h3{
+        font-size: 2em;
+        font-weight:600;
+        
+    }
+    
+    .information.second h3{
+        font-size: 2em;
+        font-weight:600;
+        
+    }
+    .information.third h3{
+        font-size: 2em;
+        font-weight:600;
+        
+    }
+    .information img{
+        width: 100px;
+        height: 100px;
+        margin: 40px 0;
+    }
+    .info-content{
+        text-align: center;
+        padding: 25px 10px;
+        font-size: 1em;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .left-info{
+        display: block;
+        width:100%;
+        float: none;
+        padding: 0;
+        margin-bottom:20px;
+        height: 100%;
+    }
+    
+    .right-info{
+        display: block;
+        width: 100%;
+        padding: 0;
+        float: none;
+        height: 100%;
+    }
+     .information.second{
+         margin: 20px 0;
+         height: 100%;
+     }
+    
+    .info-center{
+        width:90%;
+        padding: 30px 10px;
+        
+    }
+    
+    hr.underline{
+        width: 90%;
+    }
+    
+    .employee-tagline{
+        font-size: 2em;
+    }
+    .employee-subhead{
+        font-size: 1.5em;
+    }
+    #employers{
+        height:100%;
+    }
+    .employer-logos{
+        text-align: center;
+    }
+    
+    .employer-logos img {
+        width:150px;
+    }
+    .employer-logos ul li{
+        display: block;
+        margin-left: 0; 
+        margin-top:20px;   
+        
+    }
+    #sponsors{
+        margin-top:100px;
+        text-align: center;
+    }
+    .sponsors ul li{
+        display: block;
+        margin-left: 0;
+        margin-top:-1px;
+    }
+    
+    .sponsors img{
+        width: 150px;
+    }
+    
+    .footer-nav ul li{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .copyright{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* BOOTSTRAP OVERRIDES */
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Copied from old styles */
+
+.modal-content {
+    background-color: #f2f2f2;
+}
+
+
+input{color:#1a1a1a;font-weight: normal;}
+input[type="text"]{ margin-bottom: 15px;height:40px;}
+textarea{height:80px; resize: none;}    
+input[type="text"], textarea{padding:0.6em;width: 100%;outline: none;border: none;-webkit-border-radius:0px;box-shadow: none; color: #1a1a1a;}
+.selectbox{height:40px; margin-bottom:15px;padding:0.6em;}
+input[type="text"].moreinfo{padding:0.6em;width:auto;outline: none;border: none;-webkit-border-radius:0px;box-shadow: none; color: #1a1a1a;}
+input[type="text"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
+
+input[type="password"]{ margin-bottom: 15px;height:40px;}
+input[type="password"], textarea{padding:0.6em;width: 100%;outline: none;border: none;-webkit-border-radius:0px;box-shadow: none; color: #1a1a1a;}
+input[type="password"]:focus, textarea:focus{background: #e6e6e6; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; transition: all 0.15s linear;}
+
+.orangebutton .btn{width:100%;margin-top:1em; border-radius:0; border:none; background-color: #f4594e; color: white;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.orangebutton .btn:hover{background-color: #2a2a2a; color: white;}
+.formContainer{position: relative;}
+
+
+.alert {
+    display: none;
+    border: 0;
+    border-radius: 0;
+    background-color: #ff3333;
+    color: white;
+    padding:10px;
+    margin-left:10px;
+    margin-right:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+}
+
+.alert-success {
+    background-color: #22b573;
+    color: white;
+}
+
+span.error,span.valid {
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+
+span.error, span.valid {
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+span.error {
+    background-image: url("../images/notifications/error.svg");
+}
+
+span.valid {
+    background-image: url("../images/notifications/valid.svg");
+}
+
+input {
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+
+.modal-title{
+    font-family: "MS P Gothic";
+    color: #2980b9;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.modal-footer{
+    margin-top: 0px;
+}
+
+.zocial{
+    width:inherit;
+    display:inline-block;
+}
+
+.employer-link {
+    font-family: "MS P Gothic";
+    font-size: 1.5em;
+    color: #2980b9;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .modal-dialog {
+        width: auto;
+        margin: 10px;
+        z-index: 1050;
+    }
+
+}
+
+#app_store, #app_store_mobile{
+    width:250px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#app_store:hover{
+    /*
+    margin-top: -4px;
+    box-shadow: 0px 4px 13px rgba(0,0,0,.5);*/
+}
+
+#play_store{
+    width:183px;
+    margin-left:30px;
+}
+
+#app_store_buttons{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+#app_button_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #app_store_buttons{
+        display:none;
+    }
+    #app_button_mobile{
+        display:block;
+        text-align: center;
+    }
+    .header-title{
+        margin-bottom:20px;
+    }
+}
+
+.carousel-indicators li{
+    border: 1px rgba(240, 90, 40, 1) solid;
+}
+
+.carousel-indicators .active{
+    background:rgba(240, 90, 40, 1);
+}
+
+.carousel-indicators {
+    bottom:0px;
+}
+
+.upper-right-buttons{
+    float:right;
+}
+
+#learn_more_button{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    bottom:0;
+    text-decoration: none;
+    padding-bottom:25px;
+    font-size:18px;
+}
+
+#learn_more_button a{
+    text-decoration: none;
+    color:#fff;
+    opacity:.5;
+    transition: opacity 0.5s ease;
+}
+
+#learn_more_button a:hover{
+    opacity:1;
+}
+
+.recruiter-checkbox{
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+#get_the_app{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(41, 128, 185,1.0);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.sms-success{
+    width:220px;
+    background-color:rgb(31, 219, 31);
+    color:#fff;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    margin-left:15px;
+    margin-right:15px;
+    font-size:1.5em;
+    padding:4px;
+    text-align:center;
+    display:none;
+}
+
